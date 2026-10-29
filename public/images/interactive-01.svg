@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" width="1600" height="1200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.8" y2="1">
+      <stop offset="0" stop-color="#101819"/>
+      <stop offset="0.55" stop-color="#202b2d"/>
+      <stop offset="1" stop-color="#465456"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="55%">
+      <stop offset="0" stop-color="#b9c7c7" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#b9c7c7" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.1"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <rect width="1600" height="1200" fill="url(#glow)"/>
+
+  <g stroke="#8a989e" stroke-opacity="0.15" stroke-width="1">
+    <path d="M0 200h1600M0 400h1600M0 600h1600M0 800h1600M0 1000h1600"/>
+    <path d="M200 0v1200M400 0v1200M600 0v1200M800 0v1200M1000 0v1200M1200 0v1200M1400 0v1200"/>
+  </g>
+
+  <g fill="none" stroke="#c8d3d1" stroke-linecap="round">
+    <path d="M140 980c160-30 264-114 332-244 70-133 129-223 237-270 105-45 198-29 285 48 94 84 181 104 283 72 80-25 139-68 183-129" stroke-width="1.6" opacity="0.62"/>
+    <path d="M120 840c164-17 264-75 340-174 81-106 148-178 244-208 94-29 176-9 250 56 91 79 177 96 274 62 82-29 142-74 190-138" stroke-width="1.2" opacity="0.38"/>
+    <path d="M160 1080c153-39 258-123 324-251 69-134 137-214 243-249 101-33 189-9 269 72 83 84 166 107 264 76 88-27 152-76 203-143" stroke-width="1" opacity="0.25"/>
+  </g>
+
+  <g fill="#c8d3d1">
+    <g opacity="0.7">
+      <circle cx="470" cy="740" r="4"/>
+      <circle cx="584" cy="604" r="3"/>
+      <circle cx="810" cy="474" r="5"/>
+      <circle cx="1005" cy="528" r="3.5"/>
+      <circle cx="1225" cy="424" r="4.5"/>
+      <circle cx="1380" cy="282" r="3"/>
+      <circle cx="140" cy="980" r="3.5"/>
+    </g>
+    <g opacity="0.35">
+      <circle cx="250" cy="870" r="2"/>
+      <circle cx="690" cy="620" r="2"/>
+      <circle cx="930" cy="500" r="2"/>
+      <circle cx="1130" cy="430" r="2"/>
+      <circle cx="1290" cy="340" r="2"/>
+    </g>
+  </g>
+
+  <g fill="none" stroke="#f3f2ee" stroke-opacity="0.42" stroke-width="1">
+    <circle cx="810" cy="474" r="16"/>
+    <circle cx="810" cy="474" r="34" stroke-opacity="0.16"/>
+    <path d="M810 450v48M786 474h48"/>
+  </g>
+
+  <g fill="#f3f2ee" font-family="Helvetica Neue, Arial, sans-serif">
+    <text x="48" y="64" font-size="11" letter-spacing="4" opacity="0.55">FLIGHT PATH / REAL-TIME STUDY</text>
+    <text x="1552" y="64" text-anchor="end" font-size="10" letter-spacing="3" opacity="0.38">p5.js / 2026</text>
+    <text x="48" y="1128" font-size="13" letter-spacing="5" opacity="0.55">IMAGE PLACEHOLDER / INTERACTIVE 01</text>
+    <text x="48" y="1156" font-size="10" letter-spacing="3" opacity="0.36">REPLACE WITH YOUR PROJECT SCREENSHOT</text>
+  </g>
+
+  <rect width="1600" height="1200" filter="url(#grain)" opacity="0.7"/>
+</svg>

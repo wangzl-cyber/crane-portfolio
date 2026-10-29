@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" width="1600" height="1200">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#e9e8e2"/>
+      <stop offset="0.7" stop-color="#d6dad7"/>
+      <stop offset="1" stop-color="#b9c3c2"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.06"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+
+  <g stroke="#5e6b6d" stroke-opacity="0.15" stroke-width="1">
+    <path d="M0 150h1600M0 300h1600M0 450h1600M0 600h1600M0 750h1600M0 900h1600M0 1050h1600"/>
+    <path d="M150 0v1200M300 0v1200M450 0v1200M600 0v1200M750 0v1200M900 0v1200M1050 0v1200M1200 0v1200M1350 0v1200M1500 0v1200"/>
+  </g>
+
+  <g fill="none" stroke="#2d393b" stroke-linecap="round">
+    <g stroke-width="1.4" opacity="0.62">
+      <path d="M180 960c126-54 214-138 264-251 49-110 112-178 190-204 81-27 150-3 208 70 58 73 119 95 184 66 68-30 123-83 165-159"/>
+      <path d="M220 1050c133-48 228-126 286-235 57-107 122-169 197-187 77-18 141 10 192 84 51 74 108 97 171 68 67-31 121-80 163-147"/>
+      <path d="M250 870c112-45 190-117 236-215 46-97 105-156 177-178 73-23 134 3 185 76 51 74 109 95 174 63 66-32 119-78 159-139"/>
+    </g>
+
+    <g stroke-width="1" opacity="0.35">
+      <path d="M300 760c76-21 128-69 157-144 29-76 73-122 132-139 60-17 111 4 152 63 41 60 89 79 143 58 57-22 101-61 134-117"/>
+      <path d="M340 1110c122-32 205-94 249-185 43-88 100-140 171-156 72-16 133 11 181 81 47 68 100 89 159 63"/>
+    </g>
+  </g>
+
+  <g fill="#2d393b">
+    <circle cx="444" cy="709" r="4" opacity="0.65"/>
+    <circle cx="652" cy="505" r="3" opacity="0.55"/>
+    <circle cx="843" cy="518" r="5" opacity="0.7"/>
+    <circle cx="1060" cy="420" r="3.5" opacity="0.55"/>
+    <circle cx="1238" cy="290" r="4.5" opacity="0.65"/>
+    <circle cx="708" cy="812" r="2.5" opacity="0.4"/>
+    <circle cx="1095" cy="676" r="2.5" opacity="0.4"/>
+  </g>
+
+  <g fill="none" stroke="#2d393b" stroke-width="1" opacity="0.5">
+    <circle cx="843" cy="518" r="18"/>
+    <circle cx="843" cy="518" r="42" opacity="0.3"/>
+    <path d="M843 492v52M817 518h52"/>
+  </g>
+
+  <g fill="#2d393b" font-family="Helvetica Neue, Arial, sans-serif">
+    <text x="48" y="64" font-size="11" letter-spacing="4" opacity="0.55">INTERACTION TEST / GRID 02</text>
+    <text x="1552" y="64" text-anchor="end" font-size="10" letter-spacing="3" opacity="0.38">CANVAS / p5.js</text>
+    <text x="48" y="1128" font-size="13" letter-spacing="5" opacity="0.55">IMAGE PLACEHOLDER / INTERACTIVE 02</text>
+    <text x="48" y="1156" font-size="10" letter-spacing="3" opacity="0.36">REPLACE WITH YOUR INTERFACE CAPTURE</text>
+  </g>
+
+  <rect width="1600" height="1200" filter="url(#grain)" opacity="0.7"/>
+</svg>

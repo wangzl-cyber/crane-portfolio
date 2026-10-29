@@ -1,0 +1,57 @@
+{
+  "education": [
+    {
+      "period": "2022 — 2026",
+      "title": "XX 艺术学院 · 摄影专业",
+      "detail": "本科 / 艺术学学士"
+    }
+  ],
+  "exhibitions": [
+    {
+      "period": "2025",
+      "title": "「迁徙的骨架」黑颈鹤生态艺术项目",
+      "detail": "XX 美术馆 · 昆明"
+    },
+    {
+      "period": "2025",
+      "title": "青年生态影像联展",
+      "detail": "群展 · 线上"
+    },
+    {
+      "period": "2024",
+      "title": "「湿地之上」摄影双人展",
+      "detail": "XX 艺术空间 · 云南"
+    }
+  ],
+  "awards": [
+    {
+      "period": "2025",
+      "title": "「湿地与飞行」青年艺术计划 · 入选",
+      "detail": "生态影像单元"
+    },
+    {
+      "period": "2024",
+      "title": "青年生态影像展 · 优秀作品奖",
+      "detail": "中国"
+    },
+    {
+      "period": "2023",
+      "title": "大学生艺术展演 · 摄影类三等奖",
+      "detail": "中国"
+    }
+  ],
+  "residencies": [
+    {
+      "period": "2025",
+      "title": "黑颈鹤栖息地艺术驻留计划",
+      "detail": "云南 · 4 周"
+    }
+  ],
+  "skills": [
+    "摄影 / 暗房 / 影像剪辑",
+    "铁丝雕塑 / 空间装置",
+    "Blender / Cinema 4D / 基础建模与渲染",
+    "p5.js / 交互叙事 / 实时视觉",
+    "Adobe Photoshop / Lightroom / Premiere"
+  ]
+}

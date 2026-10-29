@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#121a1c"/>
+      <stop offset="0.55" stop-color="#2d393b"/>
+      <stop offset="1" stop-color="#69787b"/>
+    </linearGradient>
+    <linearGradient id="glow" cx="50%" cy="42%" r="55%">
+      <stop offset="0" stop-color="#c4d0d0" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#c4d0d0" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.1"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <rect width="1200" height="1500" fill="url(#glow)"/>
+
+  <g stroke="#8a989e" stroke-opacity="0.16" stroke-width="1">
+    <path d="M0 300h1200M0 600h1200M0 900h1200M0 1200h1200M300 0v1500M600 0v1500M900 0v1500"/>
+  </g>
+
+  <g fill="none" stroke="#dfe3de" stroke-linecap="round">
+    <g stroke-width="1.4" opacity="0.76">
+      <path d="M596 1180c-14-208-8-398 18-570 27-179 68-317 122-414"/>
+      <path d="M610 1010c-70-40-125-90-165-150M621 920c-87-44-155-100-204-168M632 828c-100-42-177-96-232-164M644 736c-108-36-191-87-250-151M656 644c-112-29-198-76-259-139M670 552c-105-21-188-62-249-123"/>
+      <path d="M628 1040c67-36 120-82 159-137M640 952c83-39 147-91 193-154M652 860c96-36 170-86 223-151M664 768c103-30 182-78 237-143M677 676c108-23 190-68 248-134M690 584c107-16 188-57 244-121"/>
+    </g>
+
+    <g stroke-width="1" opacity="0.4">
+      <path d="M580 1100c-118-38-208-94-270-169M590 1000c-126-34-222-87-288-160M600 900c-128-30-225-80-292-151M612 800c-125-25-221-73-288-144"/>
+      <path d="M642 1100c112-31 199-82 260-153M654 1000c120-27 212-75 276-145M666 900c122-22 215-68 279-137M678 800c119-17 211-60 275-128"/>
+    </g>
+
+    <g stroke-width="1.6" opacity="0.58">
+      <path d="M490 1180c-54-62-82-132-83-211M520 1120c-42-45-66-97-73-157M548 1060c-33-36-53-79-59-128"/>
+    </g>
+  </g>
+
+  <g fill="#dfe3de">
+    <circle cx="596" cy="610" r="3" opacity="0.7"/>
+    <circle cx="682" cy="440" r="2" opacity="0.5"/>
+    <circle cx="734" cy="330" r="2" opacity="0.4"/>
+    <circle cx="610" cy="1010" r="2" opacity="0.5"/>
+    <circle cx="628" cy="1040" r="2" opacity="0.4"/>
+  </g>
+
+  <g fill="#dfe3de" font-family="Helvetica Neue, Arial, sans-serif" opacity="0.45">
+    <text x="64" y="86" font-size="12" letter-spacing="5">FEATHER SEQUENCE / 3D STUDY</text>
+    <text x="64" y="1400" font-size="13" letter-spacing="5">IMAGE PLACEHOLDER / MODEL 01</text>
+    <text x="64" y="1428" font-size="10" letter-spacing="3" opacity="0.65">REPLACE WITH YOUR 3D RENDER</text>
+    <text x="1136" y="1428" text-anchor="end" font-size="10" letter-spacing="3" opacity="0.65">PARAMETRIC / 2026</text>
+  </g>
+
+  <rect width="1200" height="1500" filter="url(#grain)" opacity="0.65"/>
+</svg>

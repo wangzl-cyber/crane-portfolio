@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e4e2dc"/>
+      <stop offset="0.72" stop-color="#d3d1ca"/>
+      <stop offset="1" stop-color="#a9aaa5"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b9b8b2"/>
+      <stop offset="1" stop-color="#8d8f8b"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.07"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#wall)"/>
+  <rect y="1120" width="1200" height="380" fill="url(#floor)"/>
+  <path d="M0 1120h1200" stroke="#898b87" stroke-width="1"/>
+
+  <g fill="none" stroke="#2f383a" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke-width="2.4" opacity="0.9">
+      <path d="M430 1080c10-172 28-294 58-370 30 78 47 198 50 370"/>
+      <path d="M518 878c83-103 171-159 263-167l78 6-72 30c-78 63-147 105-227 136"/>
+      <path d="M458 1080c-66-31-113-79-143-143M476 1080c-57 36-99 82-126 139"/>
+      <circle cx="851" cy="719" r="8" fill="#2f383a" stroke="none"/>
+    </g>
+
+    <g stroke-width="1" opacity="0.5">
+      <path d="M480 980c-44-20-74-49-93-88M502 952c-42-19-72-47-91-85M526 924c-40-18-69-45-88-82M548 896c-38-17-66-43-84-79"/>
+      <path d="M526 880c37-45 75-81 115-108M559 854c37-45 75-81 115-108M592 828c36-44 73-79 112-106"/>
+      <path d="M742 746c31-25 63-43 96-54M758 782c31-24 62-42 94-52M773 819c30-23 60-40 91-50M788 856c29-22 58-39 88-48"/>
+      <path d="M466 1080c-3-70 0-134 9-193M498 1080c0-78 4-150 14-216M528 1080c2-71 6-136 14-194"/>
+    </g>
+  </g>
+
+  <path d="M384 1084c104 25 310 25 426 0 66-15 96-31 96-52-78 21-226 27-318 13-96-14-160-4-204 13Z" fill="#4d5556" opacity="0.15"/>
+
+  <rect width="1200" height="1500" filter="url(#grain)" opacity="0.7"/>
+
+  <g fill="#2f383a" font-family="Helvetica Neue, Arial, sans-serif">
+    <text x="56" y="86" font-size="13" letter-spacing="5" opacity="0.58">IMAGE PLACEHOLDER / SCULPTURE 01</text>
+    <text x="56" y="1402" font-size="13" letter-spacing="5" opacity="0.62">GALVANIZED WIRE / INSTALLATION</text>
+    <text x="56" y="1430" font-size="10" letter-spacing="3" opacity="0.42">REPLACE WITH YOUR INSTALLATION VIEW</text>
+  </g>
+</svg>

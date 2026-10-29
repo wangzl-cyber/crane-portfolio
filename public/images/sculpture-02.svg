@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#d6d5cf"/>
+      <stop offset="0.6" stop-color="#b6b8b3"/>
+      <stop offset="1" stop-color="#747d7c"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.08"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+
+  <g fill="none" stroke="#2b3334" stroke-linecap="round">
+    <g stroke-width="1.5" opacity="0.72">
+      <path d="M-60 420C240 510 440 610 604 760c178 162 330 352 458 610"/>
+      <path d="M-80 530C210 610 410 710 570 858c162 150 306 330 430 572"/>
+      <path d="M-100 650C190 720 380 812 534 950c166 148 312 320 436 550"/>
+      <path d="M-120 790C150 846 330 930 478 1058c170 146 326 306 452 522"/>
+      <path d="M-120 930C120 974 286 1048 430 1160c170 132 330 284 460 480"/>
+    </g>
+    <g stroke-width="1.1" opacity="0.5">
+      <path d="M80 300c164 168 316 330 454 512 150 196 282 416 392 688"/>
+      <path d="M240 250c156 176 292 344 414 526 136 202 250 426 342 724"/>
+      <path d="M410 220c132 174 246 336 346 514 114 202 210 428 286 766"/>
+      <path d="M590 230c108 158 198 308 278 478 94 200 172 432 230 792"/>
+      <path d="M760 270c82 140 152 280 214 438 80 198 142 438 186 792"/>
+    </g>
+    <g stroke-width="0.9" opacity="0.38">
+      <path d="M60 1280c260-112 480-230 660-382 170-144 292-318 382-532"/>
+      <path d="M140 1380c250-104 460-216 630-360 162-136 280-300 368-500"/>
+      <path d="M240 1460c230-92 430-198 592-334 156-130 270-284 356-472"/>
+      <path d="M380 1500c190-72 360-164 506-286 150-126 260-270 342-448"/>
+    </g>
+  </g>
+
+  <g fill="none" stroke="#e6e4dd" stroke-width="1" opacity="0.45">
+    <ellipse cx="614" cy="780" rx="300" ry="420" transform="rotate(-24 614 780)"/>
+    <ellipse cx="614" cy="780" rx="220" ry="340" transform="rotate(-24 614 780)"/>
+    <ellipse cx="614" cy="780" rx="140" ry="260" transform="rotate(-24 614 780)"/>
+  </g>
+
+  <rect width="1200" height="1500" filter="url(#grain)" opacity="0.75"/>
+
+  <g fill="#f3f2ee" font-family="Helvetica Neue, Arial, sans-serif">
+    <text x="56" y="86" font-size="13" letter-spacing="5" opacity="0.66">IMAGE PLACEHOLDER / SCULPTURE 02</text>
+    <text x="56" y="1398" font-size="13" letter-spacing="5" opacity="0.7">WIRE DETAIL / 2025</text>
+    <text x="56" y="1426" font-size="10" letter-spacing="3" opacity="0.46">REPLACE WITH YOUR DETAIL SHOT</text>
+  </g>
+</svg>

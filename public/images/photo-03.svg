@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6e7e1"/>
+      <stop offset="0.55" stop-color="#c9d0ce"/>
+      <stop offset="1" stop-color="#aab5b5"/>
+    </linearGradient>
+    <linearGradient id="fog" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3f2ee" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#f3f2ee" stop-opacity="0.64"/>
+      <stop offset="1" stop-color="#f3f2ee" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.09"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <rect y="580" width="1200" height="560" fill="url(#fog)"/>
+  <path d="M0 1080c196-22 360-14 532 12 176 26 329 19 483-11 68-13 129-16 185-11v430H0Z" fill="#8b9898" opacity="0.32"/>
+
+  <g fill="#354143" opacity="0.5">
+    <g>
+      <path d="M372 1010c3-66 12-119 27-159 16 39 25 92 26 159Z"/>
+      <path d="M404 934c27-34 58-54 94-59l26 3-24 12c-25 20-50 34-78 44Z"/>
+      <path d="M382 1010c-27-13-48-34-63-62M391 1010c-22 14-40 33-54 57"/>
+    </g>
+    <g>
+      <path d="M578 1060c2-50 9-91 21-123 12 31 19 73 20 123Z"/>
+      <path d="M602 1002c21-26 45-42 72-46l20 2-18 9c-19 16-39 27-60 35Z"/>
+      <path d="M586 1060c-20-10-37-26-48-47M592 1060c-16 11-30 26-41 44"/>
+    </g>
+    <g>
+      <path d="M758 1020c2-55 10-99 23-133 12 34 20 78 21 133Z"/>
+      <path d="M784 957c22-28 47-45 77-49l20 2-19 10c-20 16-41 28-64 36Z"/>
+      <path d="M768 1020c-21-11-39-28-51-51M775 1020c-17 12-32 27-43 47"/>
+    </g>
+    <g>
+      <path d="M930 1055c2-45 8-82 19-111 11 29 17 66 18 111Z"/>
+      <path d="M952 1002c19-24 41-38 66-41l18 1-16 9c-18 14-36 25-56 32Z"/>
+      <path d="M939 1055c-18-9-33-23-43-43M945 1055c-14 10-27 23-36 39"/>
+    </g>
+  </g>
+
+  <g stroke="#f3f2ee" stroke-opacity="0.55" stroke-width="1">
+    <path d="M0 250h1200M0 1240h1200"/>
+    <path d="M180 0v1500M1020 0v1500"/>
+  </g>
+
+  <rect width="1200" height="1500" filter="url(#grain)" opacity="0.8"/>
+
+  <g fill="#354143" font-family="Helvetica Neue, Arial, sans-serif">
+    <text x="56" y="86" font-size="13" letter-spacing="5" opacity="0.55">IMAGE PLACEHOLDER / PHOTO 03</text>
+    <text x="56" y="1400" font-size="13" letter-spacing="5" opacity="0.58">FAMILY IN FOG</text>
+    <text x="56" y="1428" font-size="10" letter-spacing="3" opacity="0.4">REPLACE WITH YOUR PHOTOGRAPH</text>
+    <text x="1144" y="86" text-anchor="end" font-size="11" letter-spacing="3" opacity="0.4">04</text>
+  </g>
+</svg>

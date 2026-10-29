@@ -1,0 +1,28 @@
+{
+  "name": "王正磊",
+  "nameEn": "Wang Zhenglei",
+  "role": "生态野生动物艺术创作者",
+  "roleEn": "Ecological Wildlife Artist",
+  "email": "hello@example.com",
+  "location": "中国 · 云南",
+  "description": "以黑颈鹤为长期线索，在摄影、铁丝雕塑、纪录片、3D 建模与 p5.js 交互之间，寻找观看自然的新方式。",
+  "heroIntro": "王正磊，生态野生动物艺术创作者。以黑颈鹤为线索，在摄影、铁丝装置、影像与代码之间工作。",
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://www.instagram.com/"
+    },
+    {
+      "label": "小红书",
+      "href": "https://www.xiaohongshu.com/"
+    },
+    {
+      "label": "Bilibili",
+      "href": "https://www.bilibili.com/"
+    },
+    {
+      "label": "Vimeo",
+      "href": "https://vimeo.com/"
+    }
+  ]
+}

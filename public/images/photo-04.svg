@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#cfd5d2"/>
+      <stop offset="0.55" stop-color="#899698"/>
+      <stop offset="1" stop-color="#3c484b"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5f6c6e" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#1b2325" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.12"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+  <path d="M0 900c180-42 342-32 504 4 155 34 309 31 458-6 87-22 166-23 238-8v610H0Z" fill="url(#water)"/>
+
+  <g fill="none" stroke="#f3f2ee" stroke-linecap="round">
+    <g stroke-opacity="0.52" stroke-width="2.2">
+      <path d="M498 845c2-83 14-147 34-194 23 47 36 111 38 194"/>
+      <path d="M548 779c37-43 79-66 125-70l34 3-31 14c-35 27-67 45-105 59Z"/>
+      <path d="M519 845c-31-12-56-33-75-62M527 845c-28 14-51 33-69 58"/>
+      <circle cx="709" cy="710" r="4" fill="#f3f2ee" stroke="none"/>
+    </g>
+  </g>
+
+  <g stroke="#f3f2ee" stroke-opacity="0.2" stroke-width="1">
+    <path d="M0 1050c130-16 252-10 376 15 127 26 250 24 374-4 139-31 273-30 450 8"/>
+    <path d="M0 1120c148-14 282-5 416 22 128 25 247 18 369-10 129-29 263-25 415 9"/>
+    <path d="M0 1190c120-11 241-2 360 21 132 25 261 20 390-8 142-31 285-25 450 13"/>
+    <path d="M0 1260c155-12 293 0 431 26 131 25 258 19 386-10 138-31 256-27 383 5"/>
+  </g>
+
+  <g stroke="#1b2325" stroke-width="2.2" opacity="0.35">
+    <path d="M102 1500c9-181 24-319 47-432M156 1500c-1-148 10-273 33-386M210 1500c-3-114 6-220 26-319"/>
+    <path d="M1010 1500c-10-160-25-287-48-390M1064 1500c1-137-9-255-29-359"/>
+  </g>
+
+  <rect width="1200" height="1500" filter="url(#grain)" opacity="0.8"/>
+
+  <g fill="#f3f2ee" font-family="Helvetica Neue, Arial, sans-serif">
+    <text x="56" y="86" font-size="13" letter-spacing="5" opacity="0.6">IMAGE PLACEHOLDER / PHOTO 04</text>
+    <text x="56" y="1396" font-size="13" letter-spacing="5" opacity="0.62">WATER / REFLECTION</text>
+    <text x="56" y="1424" font-size="10" letter-spacing="3" opacity="0.4">REPLACE WITH YOUR PHOTOGRAPH</text>
+  </g>
+</svg>

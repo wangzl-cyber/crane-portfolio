@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e6e5df"/>
+      <stop offset="0.65" stop-color="#d5d7d3"/>
+      <stop offset="1" stop-color="#b8c0bf"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.06"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#bg)"/>
+
+  <g stroke="#566365" stroke-opacity="0.12" stroke-width="1">
+    <path d="M0 100h1200M0 200h1200M0 300h1200M0 400h1200M0 500h1200M0 600h1200M0 700h1200M0 800h1200M0 900h1200M0 1000h1200M0 1100h1200M0 1200h1200M0 1300h1200M0 1400h1200"/>
+    <path d="M100 0v1500M200 0v1500M300 0v1500M400 0v1500M500 0v1500M600 0v1500M700 0v1500M800 0v1500M900 0v1500M1000 0v1500M1100 0v1500"/>
+  </g>
+
+  <g fill="none" stroke="#3b4648" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke-width="2" opacity="0.8">
+      <path d="M480 1280c-24-243-8-459 48-648 43-146 94-260 153-342"/>
+      <path d="M500 1130c-97-45-175-103-233-173M513 1020c-116-49-207-111-273-187M528 910c-125-45-223-104-293-177M544 800c-124-37-221-92-290-163M560 690c-119-29-211-79-278-149"/>
+      <path d="M520 1160c95-43 171-96 228-160M535 1050c111-40 198-94 262-163M550 940c121-34 214-84 281-152M565 830c123-27 218-73 285-139M580 720c120-19 213-61 279-125"/>
+    </g>
+
+    <g stroke-width="1.2" opacity="0.48">
+      <path d="M470 1180c-70-34-127-79-170-136M480 1070c-83-33-149-77-198-132M492 960c-91-30-163-71-215-124M504 850c-92-24-164-62-216-113"/>
+      <path d="M535 1180c79-30 143-70 191-121M548 1070c92-28 164-66 217-116M561 960c97-23 172-58 226-106M575 850c98-17 174-49 228-95"/>
+    </g>
+
+    <g stroke-width="1.6" opacity="0.55">
+      <path d="M488 1280c-43-46-67-98-72-156M510 1210c-31-33-50-72-56-116"/>
+    </g>
+  </g>
+
+  <g fill="#3b4648" font-family="Helvetica Neue, Arial, sans-serif">
+    <g opacity="0.5" font-size="10" letter-spacing="2">
+      <text x="760" y="930">NODE 014</text>
+      <text x="470" y="740">RACHIS / 0.82</text>
+      <text x="790" y="610">BARB ANGLE / 28°</text>
+      <text x="300" y="1180">GEOMETRY STUDY</text>
+    </g>
+    <text x="56" y="86" font-size="12" letter-spacing="5" opacity="0.5">IMAGE PLACEHOLDER / MODEL 02</text>
+    <text x="56" y="1400" font-size="13" letter-spacing="5" opacity="0.55">WIREFRAME / PROCESS</text>
+    <text x="56" y="1428" font-size="10" letter-spacing="3" opacity="0.38">REPLACE WITH YOUR 3D SCREENSHOT</text>
+  </g>
+
+  <rect width="1200" height="1500" filter="url(#grain)" opacity="0.7"/>
+</svg>

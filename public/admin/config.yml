@@ -1,0 +1,125 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "site"
+    label: "站点信息"
+    files:
+      - name: "site"
+        label: "姓名 / 邮箱 / 社交链接"
+        file: "data/site.json"
+        fields:
+          - { label: "姓名", name: "name", widget: "string" }
+          - { label: "英文名", name: "nameEn", widget: "string" }
+          - { label: "身份", name: "role", widget: "string" }
+          - { label: "英文身份", name: "roleEn", widget: "string" }
+          - { label: "邮箱", name: "email", widget: "string" }
+          - { label: "所在地", name: "location", widget: "string" }
+          - { label: "站点描述", name: "description", widget: "text" }
+          - { label: "首页简介", name: "heroIntro", widget: "text" }
+          - label: "社交链接"
+            name: "socials"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - { label: "名称", name: "label", widget: "string" }
+              - { label: "链接", name: "href", widget: "string" }
+
+  - name: "about"
+    label: "关于页"
+    files:
+      - name: "about"
+        label: "关于页内容"
+        file: "data/about.json"
+        fields:
+          - { label: "页面标题", name: "title", widget: "string" }
+          - { label: "英文标题", name: "titleEn", widget: "string" }
+          - { label: "页面简介", name: "description", widget: "text" }
+          - { label: "个人介绍开头", name: "intro", widget: "text" }
+          - label: "正文段落"
+            name: "paragraphs"
+            widget: "list"
+            field: { label: "段落", name: "paragraph", widget: "text" }
+          - { label: "教育", name: "education", widget: "string" }
+          - { label: "关注方向", name: "focus", widget: "string" }
+          - { label: "现居", name: "basedIn", widget: "string" }
+          - { label: "肖像图", name: "portrait", widget: "image" }
+          - { label: "肖像图注", name: "portraitCaption", widget: "string" }
+
+  - name: "works"
+    label: "作品"
+    files:
+      - name: "works"
+        label: "作品列表"
+        file: "data/works.json"
+        fields:
+          - label: "作品"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "标题", name: "title", widget: "string" }
+              - { label: "英文标题", name: "titleEn", widget: "string" }
+              - { label: "Slug", name: "slug", widget: "string", hint: "英文短名，唯一，用于网址 /works/slug/" }
+              - { label: "分类", name: "category", widget: "select", options: ["摄影", "装置雕塑", "纪录片影像", "3D建模", "交互项目"] }
+              - { label: "年份", name: "year", widget: "string" }
+              - { label: "媒介", name: "medium", widget: "string" }
+              - { label: "尺寸 / 时长", name: "dimensions", widget: "string" }
+              - { label: "简介", name: "summary", widget: "text" }
+              - label: "正文"
+                name: "description"
+                widget: "list"
+                field: { label: "段落", name: "paragraph", widget: "text" }
+              - label: "图片"
+                name: "images"
+                widget: "list"
+                summary: "{{fields.alt}}"
+                fields:
+                  - { label: "图片", name: "src", widget: "image" }
+                  - { label: "图片描述", name: "alt", widget: "string" }
+                  - { label: "图注", name: "caption", widget: "string", required: false }
+              - { label: "首页精选", name: "featured", widget: "boolean", default: false, required: false }
+
+  - name: "cv"
+    label: "简历 CV"
+    files:
+      - name: "cv"
+        label: "CV 内容"
+        file: "data/cv.json"
+        fields:
+          - label: "教育"
+            name: "education"
+            widget: "list"
+            fields:
+              - { label: "时间", name: "period", widget: "string" }
+              - { label: "标题", name: "title", widget: "string" }
+              - { label: "说明", name: "detail", widget: "string", required: false }
+          - label: "展览"
+            name: "exhibitions"
+            widget: "list"
+            fields:
+              - { label: "时间", name: "period", widget: "string" }
+              - { label: "标题", name: "title", widget: "string" }
+              - { label: "说明", name: "detail", widget: "string", required: false }
+          - label: "获奖"
+            name: "awards"
+            widget: "list"
+            fields:
+              - { label: "时间", name: "period", widget: "string" }
+              - { label: "标题", name: "title", widget: "string" }
+              - { label: "说明", name: "detail", widget: "string", required: false }
+          - label: "驻留"
+            name: "residencies"
+            widget: "list"
+            fields:
+              - { label: "时间", name: "period", widget: "string" }
+              - { label: "标题", name: "title", widget: "string" }
+              - { label: "说明", name: "detail", widget: "string", required: false }
+          - label: "技能"
+            name: "skills"
+            widget: "list"
+            field: { label: "技能", name: "skill", widget: "string" }

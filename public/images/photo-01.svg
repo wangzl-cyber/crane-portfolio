@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d6dcda"/>
+      <stop offset="0.5" stop-color="#aeb9b9"/>
+      <stop offset="0.75" stop-color="#8e9b9d"/>
+      <stop offset="1" stop-color="#586568"/>
+    </linearGradient>
+    <linearGradient id="fog" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef0ea" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#eef0ea" stop-opacity="0.48"/>
+      <stop offset="1" stop-color="#eef0ea" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0.12"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#sky)"/>
+  <circle cx="870" cy="420" r="82" fill="#e8e6dc" opacity="0.2"/>
+  <rect y="650" width="1200" height="520" fill="url(#fog)"/>
+
+  <path d="M0 1050c147-34 276-28 423 3 154 33 301 31 449-4 123-29 222-31 328-8v459H0Z" fill="#3a4648" opacity="0.72"/>
+  <path d="M0 1180c174-28 322-20 492 8 173 29 318 21 489-9 79-14 149-17 219-9v330H0Z" fill="#20292b"/>
+
+  <g fill="none" stroke="#20292b" stroke-linecap="round">
+    <g stroke-width="2.6" opacity="0.85">
+      <path d="M312 902c6-69 19-124 39-166 20 40 31 96 34 166"/>
+      <path d="M372 849c38-45 80-70 126-75"/>
+      <circle cx="502" cy="773" r="3.6" fill="#20292b" stroke="none"/>
+      <path d="M400 884c-22 35-30 70-26 107M429 889c-3 39 8 74 32 105"/>
+      <path d="M312 902c-39-15-70-40-91-74M320 902c-33 13-62 34-85 62"/>
+    </g>
+    <g stroke-width="1.8" opacity="0.5">
+      <path d="M720 974c5-48 14-87 28-118 14 31 22 70 24 118"/>
+      <path d="M761 925c26-32 56-50 88-54"/>
+      <circle cx="852" cy="870" r="2.8" fill="#20292b" stroke="none"/>
+      <path d="M780 961c-15 24-20 49-17 75M801 965c-2 27 6 52 22 73"/>
+    </g>
+  </g>
+
+  <g stroke="#1b2325" stroke-width="2" opacity="0.5">
+    <path d="M38 1500c10-168 23-290 44-392M84 1500c-2-136 7-250 29-354M128 1500c-3-104 5-200 21-292"/>
+    <path d="M1122 1500c-9-148-22-260-44-352M1172 1500c1-117-8-222-28-315"/>
+  </g>
+
+  <rect width="1200" height="1500" filter="url(#grain)" opacity="0.7"/>
+
+  <g fill="#f3f2ee" font-family="Helvetica Neue, Arial, sans-serif">
+    <text x="56" y="1388" font-size="13" letter-spacing="5" opacity="0.62">IMAGE PLACEHOLDER / PHOTO 01</text>
+    <text x="56" y="1416" font-size="10" letter-spacing="3" opacity="0.4">REPLACE WITH YOUR PHOTOGRAPH</text>
+    <text x="1144" y="1416" text-anchor="end" font-size="10" letter-spacing="3" opacity="0.4">WETLAND STUDY</text>
+  </g>
+</svg>
