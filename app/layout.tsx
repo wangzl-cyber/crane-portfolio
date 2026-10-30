@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -52,6 +53,11 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        {/* Netlify Identity：处理邀请、确认和重置密码链接 */}
+        <Script
+          src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
