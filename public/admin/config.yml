@@ -64,7 +64,7 @@ collections:
             fields:
               - { label: "标题", name: "title", widget: "string" }
               - { label: "英文标题", name: "titleEn", widget: "string" }
-              - { label: "Slug", name: "slug", widget: "string", hint: "英文短名，唯一，用于网址 /works/slug/" }
+              - { label: "Slug", name: "slug", widget: "string", hint: "英文短名，只能用小写英文字母、数字和短横线，例如 romance-of-architecture；不要用空格或中文。" }
               - { label: "分类", name: "category", widget: "select", options: ["摄影", "装置雕塑", "纪录片影像", "3D建模", "交互项目"] }
               - { label: "年份", name: "year", widget: "string" }
               - { label: "媒介", name: "medium", widget: "string" }
