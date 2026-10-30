@@ -17,14 +17,14 @@ export default function ArtworkCard({ work, index }: ArtworkCardProps) {
           <span>{work.year}</span>
         </div>
 
-        <div className="aspect-[4/5] w-full overflow-hidden bg-mist">
+        <div className="aspect-[3/2] w-full overflow-hidden bg-mist">
           {/* 图片替换位置：作品数据在 data/works.json */}
           <img
             src={cover.src}
             alt={cover.alt}
             loading="lazy"
             decoding="async"
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover object-center"
           />
         </div>
 
