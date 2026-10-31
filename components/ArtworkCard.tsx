@@ -3,20 +3,14 @@ import type { Work } from "@/data/works";
 
 type ArtworkCardProps = {
   work: Work;
-  index: number;
 };
 
-export default function ArtworkCard({ work, index }: ArtworkCardProps) {
+export default function ArtworkCard({ work }: ArtworkCardProps) {
   const cover = work.images[0];
 
   return (
     <article>
-      <Link href={`/works/${work.slug}/`} className="block">
-        <div className="mb-3 flex items-center justify-between text-[10px] uppercase tracking-[0.18em] text-muted">
-          <span>{String(index + 1).padStart(2, "0")}</span>
-          <span>{work.year}</span>
-        </div>
-
+      <Link href={`/works/${work.slug}/`} className="group block">
         <div className="aspect-[3/2] w-full overflow-hidden bg-mist">
           {/* 图片替换位置：作品数据在 data/works.json */}
           <img
@@ -24,21 +18,21 @@ export default function ArtworkCard({ work, index }: ArtworkCardProps) {
             alt={cover.alt}
             loading="lazy"
             decoding="async"
-            className="h-full w-full object-cover object-center"
+            className="h-full w-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.015]"
           />
         </div>
 
-        <div className="mt-4 flex items-start justify-between gap-5 border-t border-line pt-3">
+        <div className="mt-5 flex items-start justify-between gap-6">
           <div>
-            <h2 className="font-display text-xl leading-snug tracking-[-0.01em] md:text-2xl">
+            <h2 className="font-display text-2xl leading-snug tracking-[-0.01em] md:text-3xl">
               {work.title}
             </h2>
-            <p className="mt-1 text-[10px] uppercase tracking-[0.14em] text-muted">
+            <p className="mt-1.5 text-[10px] uppercase tracking-[0.14em] text-muted">
               {work.titleEn}
             </p>
           </div>
           <p className="shrink-0 pt-1 text-right text-[10px] leading-5 tracking-[0.08em] text-muted">
-            {work.category}
+            {work.year} / {work.category}
           </p>
         </div>
       </Link>

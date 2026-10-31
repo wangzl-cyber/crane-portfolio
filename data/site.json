@@ -18,11 +18,18 @@
     }
   ],
   "name": "王正磊",
-  "heroIntro": "王正磊，生态野生动物艺术创作者。以黑颈鹤为线索，在摄影、铁丝装置、影像与代码之间工作。",
   "nameEn": "Wang Zhenglei",
+  "heroTitle": "在影像之间",
+  "heroTitleEn": "Between Images",
+  "heroIntro": "王正磊，摄影艺术家。以摄影为起点，在影像、空间与跨媒介实践之间工作。",
+  "heroImage": "/images/hero.svg",
+  "heroImageAlt": "王正磊摄影作品首页大图占位",
   "location": "中国 · 云南",
-  "role": "生态野生动物艺术创作者",
+  "role": "摄影艺术家",
   "email": "3550191336@qq.com",
-  "description": "以黑颈鹤为长期线索，在摄影、铁丝雕塑、纪录片、3D 建模与 p5.js 交互之间，寻找观看自然的新方式。",
-  "roleEn": "Ecological Wildlife Artist"
+  "description": "王正磊，摄影艺术家。以摄影为起点，在影像、空间与跨媒介实践之间工作。",
+  "worksTitle": "作品",
+  "worksTitleEn": "Selected works, 2024—2026",
+  "worksDescription": "以摄影为起点，作品在影像、空间与跨媒介实践之间展开，关注观看、场所与日常经验。点击卡片查看完整项目与图像。",
+  "roleEn": "Photography Artist"
 }

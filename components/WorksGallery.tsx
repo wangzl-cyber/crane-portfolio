@@ -52,9 +52,9 @@ export default function WorksGallery() {
 
       <div className="page-wrap py-12 md:py-20">
         {visibleWorks.length > 0 ? (
-          <div className="grid gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
-            {visibleWorks.map((work, index) => (
-              <ArtworkCard key={work.slug} work={work} index={index} />
+          <div className="grid gap-x-8 gap-y-16 sm:grid-cols-2 lg:gap-x-12 lg:gap-y-24">
+            {visibleWorks.map((work) => (
+              <ArtworkCard key={work.slug} work={work} />
             ))}
           </div>
         ) : (

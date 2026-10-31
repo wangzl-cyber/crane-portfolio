@@ -4,7 +4,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "联系",
-  description: `联系${site.name}，讨论展览、合作、作品收藏或生态艺术项目。`,
+  description: `联系${site.name}，讨论展览、合作、作品收藏或摄影项目。`,
 };
 
 export default function ContactPage() {
@@ -14,7 +14,7 @@ export default function ContactPage() {
         index="Contact / 06"
         title="联系"
         titleEn="Say hello"
-        description="关于展览、合作、作品收藏，或任何与湿地和黑颈鹤有关的问题，欢迎写信。"
+        description="关于展览、合作、作品收藏，或任何摄影与跨媒介项目，欢迎写信。"
       />
 
       <section className="page-wrap py-16 md:py-28">
@@ -36,7 +36,7 @@ export default function ContactPage() {
               <p className="eyebrow">Available for</p>
               <ul className="mt-5 space-y-3 text-sm text-muted">
                 <li>展览与艺术项目合作</li>
-                <li>生态影像 / 纪录片拍摄</li>
+                <li>摄影 / 影像与纪录片拍摄</li>
                 <li>摄影作品收藏与授权</li>
                 <li>p5.js 与实时影像工作坊</li>
               </ul>

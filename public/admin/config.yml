@@ -10,7 +10,7 @@ collections:
     label: "站点信息"
     files:
       - name: "site"
-        label: "姓名 / 邮箱 / 社交链接"
+        label: "站点信息 / 首页"
         file: "data/site.json"
         fields:
           - { label: "姓名", name: "name", widget: "string" }
@@ -20,7 +20,14 @@ collections:
           - { label: "邮箱", name: "email", widget: "string" }
           - { label: "所在地", name: "location", widget: "string" }
           - { label: "站点描述", name: "description", widget: "text" }
+          - { label: "首页标题", name: "heroTitle", widget: "string" }
+          - { label: "首页英文标题", name: "heroTitleEn", widget: "string" }
           - { label: "首页简介", name: "heroIntro", widget: "text" }
+          - { label: "首页大图", name: "heroImage", widget: "image" }
+          - { label: "首页大图描述", name: "heroImageAlt", widget: "string" }
+          - { label: "作品页标题", name: "worksTitle", widget: "string" }
+          - { label: "作品页英文标题", name: "worksTitleEn", widget: "string" }
+          - { label: "作品页简介", name: "worksDescription", widget: "text" }
           - label: "社交链接"
             name: "socials"
             widget: "list"

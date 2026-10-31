@@ -15,24 +15,24 @@ export default function HomePage() {
           ============================================================ */}
       <section className="relative isolate overflow-hidden bg-ink text-paper">
         <img
-          src="/images/hero.svg"
-          alt="黑颈鹤与湿地主题首页大图占位"
+          src={site.heroImage}
+          alt={site.heroImageAlt}
           className="absolute inset-0 -z-20 h-full w-full object-cover opacity-80"
         />
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-ink/20 via-ink/20 to-ink/80" />
 
         <div className="page-wrap flex min-h-[72vh] flex-col justify-end pb-12 pt-28 md:min-h-[82vh] md:pb-16 md:pt-40">
           <p className="eyebrow text-paper/55">
-            Ecological Wildlife Art / 2024—2026
+            Photography / Visual Art / 2024—2026
           </p>
 
           <div className="mt-8 flex flex-col gap-10 md:flex-row md:items-end md:justify-between md:gap-16">
             <div className="max-w-3xl">
               <h1 className="font-display text-[clamp(4rem,11vw,8.5rem)] leading-[0.88] tracking-[-0.05em]">
-                与鹤同行
+                {site.heroTitle}
               </h1>
               <p className="mt-5 text-[10px] uppercase tracking-[0.36em] text-paper/60 md:text-xs">
-                Where the crane flies
+                {site.heroTitleEn}
               </p>
             </div>
 
@@ -59,16 +59,15 @@ export default function HomePage() {
 
           <div className="md:col-span-8 md:col-start-5">
             <p className="font-display text-3xl leading-[1.55] tracking-[-0.01em] md:text-4xl">
-              我把黑颈鹤作为一种方法：通过它理解湿地、迁徙，以及人类观看自然的方式。
+              我把摄影作为一种观看方法：通过影像理解空间、记忆，以及人与世界的关系。
             </p>
 
             <div className="mt-10 grid gap-6 md:grid-cols-2">
               <p className="text-sm leading-7 text-muted">
-                我的创作从长时间的田野观察开始。摄影记录等待，铁丝装置把身体重新交还给空间，影像与 3D
-                则尝试保存那些无法被照片留住的运动。
+                我的创作从观察开始。照片、影像、材料与代码，都是理解现实的不同入口。
               </p>
               <p className="text-sm leading-7 text-muted">
-                所有媒介最终都回到同一个问题：我们如何与一个正在消失的栖息地相处？作品希望保持安静，让观看成为一次缓慢的靠近。
+                媒介不断变化，但关注的核心始终是影像如何保存经验，以及观看如何发生。作品希望保持开放，让观看成为一次缓慢的靠近。
               </p>
             </div>
 
@@ -87,9 +86,9 @@ export default function HomePage() {
 
           <blockquote className="md:col-span-9">
             <p className="max-w-4xl font-display text-3xl leading-[1.5] tracking-[-0.01em] md:text-5xl">
-              “让钢铁学会迁徙，
+              “让影像保持开放，
               <br className="hidden md:block" />
-              让影像替湿地保存记忆。”
+              让观看成为一次缓慢的靠近。”
             </p>
             <footer className="mt-8 text-[10px] uppercase tracking-[0.24em] text-paper/50">
               — 创作自述
@@ -113,8 +112,8 @@ export default function HomePage() {
           </div>
 
           <div className="mt-12 grid gap-x-6 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
-            {featuredWorks.map((work, index) => (
-              <ArtworkCard key={work.slug} work={work} index={index} />
+            {featuredWorks.map((work) => (
+              <ArtworkCard key={work.slug} work={work} />
             ))}
           </div>
         </div>

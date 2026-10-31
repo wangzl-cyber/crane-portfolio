@@ -7,7 +7,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "关于",
-  description: `${site.name}，${site.role}。以黑颈鹤为长期线索，在摄影、装置、影像与交互之间创作。`,
+  description: `${site.name}，${site.role}。以摄影为起点，在影像、空间与跨媒介实践之间工作。`,
 };
 
 // 身份信息可在 data/about.json 或 /admin/ 后台修改。

@@ -1,22 +1,30 @@
 import type { Metadata } from "next";
-import PageHeader from "@/components/PageHeader";
 import WorksGallery from "@/components/WorksGallery";
+import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "作品",
-  description:
-    "摄影、装置雕塑、纪录片影像、3D 建模与交互项目。围绕黑颈鹤与湿地生态展开的跨媒介实践。",
+  description: site.worksDescription,
 };
 
 export default function WorksPage() {
   return (
     <>
-      <PageHeader
-        index="Works / 03"
-        title="作品"
-        titleEn="Selected works, 2024—2026"
-        description="围绕黑颈鹤与湿地生态展开的跨媒介实践。点击作品卡片查看完整项目与图像。"
-      />
+      <header className="border-b border-line">
+        <div className="page-wrap py-16 md:py-28">
+          <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between md:gap-16">
+            <div>
+              <p className="eyebrow">{site.worksTitleEn}</p>
+              <h1 className="mt-6 font-display text-[clamp(4.5rem,12vw,10rem)] leading-[0.86] tracking-[-0.04em]">
+                {site.worksTitle}
+              </h1>
+            </div>
+            <p className="max-w-md text-sm leading-7 text-muted md:pb-3">
+              {site.worksDescription}
+            </p>
+          </div>
+        </div>
+      </header>
       <WorksGallery />
     </>
   );

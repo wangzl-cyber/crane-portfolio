@@ -7,21 +7,22 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: {
-    default: `${site.name}｜生态野生动物艺术`,
+    default: `${site.name}｜摄影艺术`,
     template: `%s｜${site.name}`,
   },
   description: site.description,
   authors: [{ name: site.name }],
   keywords: [
-    "生态艺术",
-    "野生动物艺术",
-    "黑颈鹤",
     "摄影",
-    "装置雕塑",
+    "当代摄影",
+    "影像艺术",
+    "跨媒介",
+    "装置",
+    "3D",
     "p5.js",
   ],
   openGraph: {
-    title: `${site.name}｜生态野生动物艺术`,
+    title: `${site.name}｜摄影艺术`,
     description: site.description,
     type: "website",
     locale: "zh_CN",

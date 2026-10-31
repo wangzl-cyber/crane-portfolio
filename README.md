@@ -1,4 +1,4 @@
-# 与鹤同行 · 生态野生动物艺术 portfolio
+# 王正磊 · 摄影艺术 portfolio
 
 一个极简的黑白 / 低饱和灰蓝画廊风格艺术家作品集，使用 **Next.js 14 App Router + Tailwind CSS** 构建，生产构建开启静态导出（`output: "export"`），可部署到 Netlify 或 Vercel。内置 **Decap CMS** 后台：登录 `/admin/` 可以修改内容，普通访客只能浏览。
 
@@ -148,11 +148,13 @@ Netlify 从 GitHub 导入项目后会自动读取这份配置。后台登录也�
 {
   "name": "王正磊",
   "nameEn": "Wang Zhenglei",
-  "role": "生态野生动物艺术创作者",
-  "roleEn": "Ecological Wildlife Artist",
+  "role": "摄影艺术家",
+  "roleEn": "Photography Artist",
   "email": "hello@example.com",
   "location": "中国 · 云南",
   "description": "一句话介绍你的创作方向。",
+  "heroTitle": "在影像之间",
+  "heroTitleEn": "Between Images",
   "heroIntro": "首页大图旁的个人简介。",
   "socials": [
     { "label": "Instagram", "href": "https://www.instagram.com/" },
